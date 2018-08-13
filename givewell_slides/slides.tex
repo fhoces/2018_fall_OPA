@@ -4,7 +4,7 @@
 
 \mode<presentation>
 {
-  \usetheme[hideothersubsections]{Berkeley}
+  \usetheme[hideothersubsections]{Boadilla}
   % or ...
 
   \setbeamercovered{transparent}
@@ -100,44 +100,9 @@ basicstyle=\scriptsize\tt,
   rounded corners=2pt]  {\Large\insertbuttontext};}
 
 
-\title[Open Policy Analysis ] % (optional, use only with long paper titles)
-{Why We Need Open Policy Analysis}
-
-\subtitle
-{}
-
-\author[] % (optional, use only with lots of authors)
-{Fernando~Hoces de la Guardia\inst{1}\\
-Sean~Grant\inst{2}\\
-Edward Miguel\inst{1}}
-% - Give the names in the same order as the appear in the paper.
-% - Use the \inst{?} command only if the authors have different
-%   affiliation.
-
-\institute[Universities of Somewhere and Elsewhere] % (optional, but mostly needed)
-{
-  \inst{1}%
-  UC Berkeley:\\
-  Berkeley Initiative for Transparency in the Social Sciences\\
-  \inst{2}%
-  RAND\\
-}
-% - Use the \inst command only if there are several affiliations.
-% - Keep it simple, no one is interested in your street address.
-
-\date[] % (optional, should be abbreviation of conference name)
-{Congressional Budget Office\\
-March 29th, 2018}
-% - Either use conference name or its abbreviation.
-% - Not really informative to the audience, more for people (including
-%   yourself) who are reading the slides online
-
 \subject{Research Transparency}
 % This is only inserted into the PDF information catalog. Can be left
 % out. 
-
-\pgfdeclareimage[height=2cm]{university-logo}{../Images/BITSSlogo.png}
-\logo{\pgfuseimage{university-logo}}
 
 % If you have a file called "university-logo-filename.xxx", where xxx
 % is a graphic format that can be processed by latex or pdflatex,
@@ -165,22 +130,93 @@ March 29th, 2018}
 
 
 \begin{document}
-\begin{frame}{What is policy analysis?}
-\vspace{-1in}
 
-\hspace{-0.5in}\begin{align*}
+\title[] % (optional, use only with long paper titles)
+{Open Policy Analysis: Principles and Applications}
+
+\subtitle
+{}
+
+\author[] % (optional, use only with lots of authors)
+{Fernando~Hoces de la Guardia\inst{1}}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[] % (optional, but mostly needed)
+{
+  \inst{1}%
+  UC Berkeley:\\
+  Berkeley Initiative for Transparency in the Social Sciences\\
+}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[] % (optional, should be abbreviation of conference name)
+{GiveWell\\
+August 23rd, 2018}
+
+
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\setbeamercovered{invisible}
+
+\begin{frame}[plain]{What is Policy Analysis?}
+
+\begin{align*}
 \intertext{Cynical view:}
 \text{Policy Analysis} &= \text{Research} - \text{Novelty} - \text{Rigor}  
-\intertext{Optimists view:}
-\text{Policy Analysis} &= \text{Research} - \text{Novelty} - \text{Rigor} + \text{Relevance}   
-\intertext{Our proposal:}
-\text{Open Policy Analysis} &= \text{Research} - \text{Novelty}+ \text{Relevance}   
+\onslide<2->{\intertext{Optimists view:}
+\text{Policy Analysis} &= \text{Research} - \text{Novelty}  + \text{Relevance}  - \text{Rigor} }
+\onslide<3>{\intertext{Our proposal:}
+\text{Open Policy Analysis} &= \text{Research} - \text{Novelty}+ \text{Relevance}    }
 \end{align*}
 
 \end{frame}
 
+\setbeamercovered{transparent}
 
 \part{Paper 1}
+
+
+\title[Open Policy Analysis ] % (optional, use only with long paper titles)
+{Why We Need Open Policy Analysis}
+
+\subtitle
+{}
+
+\author[] % (optional, use only with lots of authors)
+{Fernando~Hoces de la Guardia\inst{1}\\
+Sean~Grant\inst{2}\\
+Edward Miguel\inst{1}}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[] % (optional, but mostly needed)
+{
+  \inst{1}%
+  UC Berkeley:\\
+  Berkeley Initiative for Transparency in the Social Sciences\\
+  \inst{2}%
+  RAND\\
+}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[] % (optional, should be abbreviation of conference name)
+{GiveWell\\
+August 23rd, 2018}
+
+
+% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
 \begin{frame}
   \titlepage
 \end{frame}
@@ -243,8 +279,8 @@ Policy Analysis is a fundamental link.
 
 
 \begin{figure}[h!]\centering
-\vspace{-2.0em}
-\begin{tikzpicture}[thick,scale=0.55, every node/.style={scale=0.55}]
+
+\begin{tikzpicture}[thick,scale=0.6, every node/.style={scale=0.6}]
 
 %% The oddly shaped truth
 \node[regular polygon, regular polygon sides=3,
@@ -278,7 +314,7 @@ Policy Analysis is a fundamental link.
 
 
 
-\draw[decoration={brace}, decorate] (7,3.4) -- node[above=6pt](lab4){{\Large Observed by citizens} }(16,3.4);
+\draw[decoration={brace}, decorate] (6.2,3.4) -- node[above=6pt](lab4){{\Large Observed by citizens} }(15.2,3.4);
 
 
 
@@ -725,7 +761,7 @@ Examples: Require contracted policy analysis to be fully open. Support training 
 % - Use the \inst{?} command only if the authors have different
 %   affiliation.
 
-\institute[Universities of Somewhere and Elsewhere] % (optional, but mostly needed)
+\institute[] % (optional, but mostly needed)
 {
   \inst{1}%
   UC Berkeley:\\
@@ -1183,8 +1219,8 @@ Let's assume this becomes the new status quo.
 
 \begin{frame}{An Aspiration}
    \begin{tikzpicture}[remember picture,overlay]
-       \node[at=(current page.center), xshift = 2em, yshift = -1.4em] {
-         \includegraphics[width=.87\paperwidth]{../Images/aspiration.PNG}
+       \node[at=(current page.center), xshift =0em, yshift = -1.4em] {
+         \includegraphics[width=.98\paperwidth]{../Images/aspiration.PNG}
        };
    \end{tikzpicture}
 \end{frame}
