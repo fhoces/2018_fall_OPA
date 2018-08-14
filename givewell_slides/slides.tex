@@ -26,6 +26,7 @@
 \usepackage{natbib}
 \usepackage{tcolorbox}
 \usepackage{transparent}
+\usepackage{comment}
 
 
 \usepackage{relsize, lscape}
@@ -45,13 +46,6 @@
 % does not look nice, try deleting the line with the fontenc.
 
 
-\addtobeamertemplate{navigation symbols}{}{%
-    \usebeamerfont{footline}%
-    \usebeamercolor[fg]{footline}%
-    \hspace{1em}%
-    \insertframenumber/\inserttotalframenumber
-}
-
 \newcommand{\nit}[1]{\textrm{\textit{{\color{red}[#1]}}}}
 \newcommand{\highlight}[1]{\colorbox{yellow}{$\displaystyle #1$}}
 \newcommand{\highlightw}[1]{\colorbox{white}{$\displaystyle #1$}}
@@ -66,7 +60,7 @@
 \def\black{\color{black}}
 \def\blue{\color{blue}}
 
-
+\beamertemplatenavigationsymbolsempty
 
 \renewcommand{\topfraction}{0.9}
 \newsavebox{\codebox}
@@ -138,14 +132,13 @@ basicstyle=\scriptsize\tt,
 {}
 
 \author[] % (optional, use only with lots of authors)
-{Fernando~Hoces de la Guardia\inst{1}}
+{Fernando~Hoces de la Guardia}
 % - Give the names in the same order as the appear in the paper.
 % - Use the \inst{?} command only if the authors have different
 %   affiliation.
 
 \institute[] % (optional, but mostly needed)
-{
-  \inst{1}%
+{%
   UC Berkeley:\\
   Berkeley Initiative for Transparency in the Social Sciences\\
 }
@@ -165,7 +158,7 @@ August 23rd, 2018}
 
 \setbeamercovered{invisible}
 
-\begin{frame}[plain]{What is Policy Analysis?}
+\begin{frame}{Motivation}
 
 \begin{align*}
 \intertext{Cynical view:}
@@ -342,18 +335,6 @@ Policy Analysis is a fundamental link.
 \end{frame} 
 
 
-\section[Open Science]{The Open Science Movement}
-
-\begin{frame}{The Open Science Movement}
-
-\begin{itemize}
-\item Definition of principles of Open Science/Research Transparency (Miguel et al 2014)
-\item Development of guidelines to operationalize principles of Open Science (Nosek et al 2015)
-\item Journals and funders: Journals (Science + 5k other journals), Registries (AEA), Funders (NIH, NSF and multiple donors)
-\end{itemize}
-
-\end{frame} 
-
 \section[Crisis in PA]{Credibility Crisis Of Policy Analysis}
 
 \begin{frame}{Credibility Crisis Of Policy Analysis}
@@ -461,6 +442,66 @@ Freedom}(34,-33);
 \end{figure}
 %\end{comment}
 \end{frame}
+
+
+
+\begin{frame}{}
+\begin{table}[ht]
+\centering
+\begin{tabular}[t]{|l|c|c|}
+\hline
+& Empirical  & Policy \\
+& Research & Analysis \\
+
+\hline
+Problems & Reproducibility  &  Credibility \\
+				 &  Crisis & Crisis \\
+\hline
+Solutions & {\white  \textit{Open Science } }&    {\white \textit{Open Policy Analysis } }\\
+ &   {\white Principles, Guidelines, } &   {\white Principles, Guidelines,}\\
+ &  {\white  Applications} &   {\white Applications}\\
+
+\hline
+\end{tabular}
+\end{table}%
+\end{frame}
+
+
+
+
+\begin{frame}[noframenumbering]{}
+\begin{table}[ht]
+\centering
+\begin{tabular}[t]{|l|c|c|}
+\hline
+& Empirical  & Policy \\
+& Research & Analysis \\
+
+\hline
+Problems & Reproducibility  &  Credibility \\
+				 &  Crisis & Crisis \\
+\hline
+Solutions &  \textit{Open Science }&    {\white \textit{Open Policy Analysis } }\\
+ &   Principles, Guidelines, &   {\white Principles, Guidelines,}\\
+ &    Applications  &   {\white Applications}\\
+
+\hline
+\end{tabular}
+\end{table}%
+\end{frame}
+
+\section[Open Science]{The Open Science Movement}
+
+\begin{frame}{The Open Science Movement}
+
+\begin{itemize}
+\item Definition of principles of Open Science/Research Transparency (Miguel et al 2014)
+\item Development of guidelines to operationalize principles of Open Science (Nosek et al 2015)
+\item Journals and funders: Journals (Science + 5k other journals), Registries (AEA), Funders (NIH, NSF and multiple donors)
+\end{itemize}
+
+\end{frame} 
+
 
 \begin{frame}{Relevance}
 Main consequences of policy analysis that lacks openness:
@@ -694,7 +735,7 @@ Proposed principles:
 \end{columns}
 \end{frame}
 
-
+\begin{comment}
 \section{Suggestions}
 
 \begin{frame}{Suggestions}
@@ -710,7 +751,7 @@ Boost in credibility, lower costs in the long run. Examples: GiveWell, and AEI.
 Examples: Require contracted policy analysis to be fully open. Support training and adoption of new tools (VC and DD). Inject resources for the transition.
 \end{enumerate}
 \end{frame} 
-
+\end{comment}
 
 \section[Conclusion]{Conclusion}
 
@@ -782,7 +823,7 @@ March 29th, 2018}
 
 \section{Motivation}
 
-\begin{frame}[noframenumbering]{Motivation 1: Gap On How to Conduct OPA}
+\begin{frame}[noframenumbering]{Motivation: Gap On How to Conduct OPA}
 \begin{table}[ht]
 \centering
 \begin{tabular}[t]{|l|c|c|}
@@ -804,7 +845,7 @@ Solutions &  \textit{Open Science}&    \textit{Open Policy Analysis} \\
 \end{frame}
 
 
-\begin{frame}[noframenumbering]{Motivation 1: Gap On How to Conduct OPA}
+\begin{frame}[noframenumbering]{Motivation: Gap On How to Conduct OPA}
 \begin{table}[ht]
 \centering
 \begin{tabular}[t]{|l|c|c|}
@@ -860,6 +901,7 @@ Congressional Budget Office (2014)
 \textbf{Key research estimate:} Elasticity of labor demand for teenagers in the labor force. 
 \end{frame}
 
+\begin{comment}
 
 \begin{frame}{Reasons for Selecting the Case Study}
     \begin{multicols}{2}
@@ -880,6 +922,8 @@ Congressional Budget Office (2014)
 \label{mw_gtrend}
 \end{figure}	
 \end{frame}
+
+\end{comment}
 
 \section{Guidelines}
 
@@ -974,7 +1018,7 @@ Congressional Budget Office (2014)
 
 \end{frame}
 
-
+\begin{comment}
 
 \begin{frame}[shrink=25, label=map_cbo]{Map the complete policy analysis}
 
@@ -1087,6 +1131,7 @@ Congressional Budget Office (2014)
 \end{figure}	
 \end{frame}
 
+\end{comment}
 
 \section{Sensitivity Analysis}
 
@@ -1204,18 +1249,22 @@ Let's assume this becomes the new status quo.
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Possibilities for Collaboration}
+\begin{frame}{BITSS/CEGA's next step to push OPA forward}
 \begin{itemize}
-\item CBO is a leader in policy analysis. Leading OPA would shield its credibility and encourage others (ala Journal Science for Empirical Research). 
-\item{What can BITSS offer: }
-\begin{itemize}
-\item Technical support next case study (funded through August 2018).
-\item Training on research transparency methods.
-\end{itemize}
-\item Join a group of experts to develop and publish guidelines (APPAM 2018 convening).
+\item Partner with key policy analysts to build more case studies (CBO, Tax policy/Inequality, Chilean pension reform)
+\item Guidelines and trainings
+\item Developing a new model for collaboration among policy analysts, policy-makers and researchers, with the aim of fostering more direct impact on high-level government decisions
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Your next steps to push OPA forward}
+\begin{itemize}
+\item Collaborate with BITSS to open up your PA. 
+\item Fund OPA: directly or conditionally.
+\item Present/showcase your OPA. 
+\item Nominate PA to be open. 
+\end{itemize}
+\end{frame}
 
 \begin{frame}{An Aspiration}
    \begin{tikzpicture}[remember picture,overlay]
