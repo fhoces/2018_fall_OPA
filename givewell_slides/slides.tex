@@ -157,19 +157,7 @@ August 23rd, 2018}
 
 
 \setbeamercovered{invisible}
-
-\begin{frame}{Motivation: To Producers of Policy Analysis}
-\vspace{-0.5in}
-\begin{align*}
-\intertext{Cynical view:}
-\text{Policy Analysis} &= \text{Research} - \text{Novelty} - \text{Rigor}  
-\onslide<2->{\intertext{Optimists view:}
-\text{Policy Analysis} &= \text{Research} - \text{Novelty}  + \text{Relevance}  - \text{Rigor} }
-\onslide<3>{\intertext{Our proposal:}
-\text{Open Policy Analysis} &= \text{Research} - \text{Novelty}+ \text{Relevance}    }
-\end{align*}
-
-\end{frame}
+\begin{comment}
 
 \begin{frame}{Motivation: To Producers of Policy Analysis}
 \vspace{-0.5in}
@@ -199,50 +187,17 @@ indirect: general knowledge, NYT op-ed)
 \end{itemize}
 \end{frame}
 
+\end{comment}
+
 \setbeamercovered{transparent}
 
-\part{Paper 1}
-
-
-\title[Open Policy Analysis ] % (optional, use only with long paper titles)
-{Why We Need Open Policy Analysis}
-
-\subtitle
-{}
-
-\author[] % (optional, use only with lots of authors)
-{Fernando~Hoces de la Guardia\inst{1}\\
-Sean~Grant\inst{2}\\
-Edward Miguel\inst{1}}
-% - Give the names in the same order as the appear in the paper.
-% - Use the \inst{?} command only if the authors have different
-%   affiliation.
-
-\institute[] % (optional, but mostly needed)
-{
-  \inst{1}%
-  UC Berkeley:\\
-  Berkeley Initiative for Transparency in the Social Sciences\\
-  \inst{2}%
-  RAND\\
-}
-% - Use the \inst command only if there are several affiliations.
-% - Keep it simple, no one is interested in your street address.
-
-\date[] % (optional, should be abbreviation of conference name)
-{GiveWell\\
-August 23rd, 2018}
-
-
-% - Either use conference name or its abbreviation.
-% - Not really informative to the audience, more for people (including
-%   yourself) who are reading the slides online
-
 \begin{frame}
-  \titlepage
+\begin{enumerate}
+\item Why we need Open Policy Analysis (Hoces de la Guardia, Grant \& Miguel, 2018)
+\bigskip
+\item Application to policy estimates of the minimum wage. 
+\end{enumerate}
 \end{frame}
-
-
 
 
 % Structuring a talk is a difficult task and the following structure
@@ -285,7 +240,15 @@ Policy Analysis is a fundamental link.
 \end{itemize}
 \end{frame} 
 
-
+\begin{frame}{Examples of Policy Analysis}
+\begin{figure}[h!]
+\centering
+\hspace*{-3em}
+\includegraphics[scale = 0.3]{../Images/givewell}
+\caption{Screen shot of GiveWell's CE spreadsheet}
+\label{ex_pa}
+\end{figure}	
+\end{frame}
 \begin{frame}{One Ideal Evidence-Based Policy Link}
 
 \tikzstyle{agent} = [diamond, draw, node distance= 7em, minimum height=5em, minimum width=5em]
@@ -335,7 +298,7 @@ Policy Analysis is a fundamental link.
 
 
 
-\draw[decoration={brace}, decorate] (6.2,3.4) -- node[above=6pt](lab4){{\Large Observed by citizens} }(15.2,3.4);
+\draw[decoration={brace}, decorate] (7,3.4) -- node[above=6pt](lab4){{\Large Observed by citizens} }(15.2,3.4);
 
 
 
@@ -362,6 +325,16 @@ Policy Analysis is a fundamental link.
 
 \end{frame} 
 
+
+\begin{frame}{The Open Science Movement}
+
+\begin{itemize}
+\item Definition of principles of Open Science/Research Transparency (Miguel et al 2014)
+\item Development of guidelines to operationalize principles of Open Science (Nosek et al 2015)
+\item Journals and funders: Journals (Science + 5k other journals), Registries (AEA), Funders (NIH, NSF and multiple donors)
+\end{itemize}
+
+\end{frame} 
 
 \section[Crisis in PA]{Credibility Crisis Of Policy Analysis}
 
@@ -525,7 +498,7 @@ Solutions &  \textit{Open Science }&    {\white \textit{Open Policy Analysis } }
 Main consequences of policy analysis that lacks openness:
 \begin{enumerate}
 \item Cherry picking evidence.
-\item Challenging to automate and Improve systematically recurring reports.
+\item Challenging to automate and improve systematically recurring reports.
 \item Difficulty understanding how research informs policy analysis.
 \end{enumerate}
 \end{frame}
@@ -568,17 +541,6 @@ Main consequences of policy analysis that lacks openness:
 
 \section[Solutions]{The Open Science Movement}
 
-\begin{frame}{The Open Science Movement}
-
-\begin{itemize}
-\item Definition of principles of Open Science/Research Transparency (Miguel et al 2014)
-\item Development of guidelines to operationalize principles of Open Science (Nosek et al 2015)
-\item Journals and funders: Journals (Science + 5k other journals), Registries (AEA), Funders (NIH, NSF and multiple donors)
-\end{itemize}
-
-\end{frame} 
-
-
 \begin{frame}{Open Science}
 \begin{table}[ht]
 \centering
@@ -599,6 +561,7 @@ Solutions &  \textit{Open Science }&    {\white \textit{Open Policy Analysis } }
 \end{tabular}
 \end{table}%
 \end{frame}
+
 
 \begin{frame}[noframenumbering]{Open Policy Analysis}
 \begin{table}[ht]
@@ -712,15 +675,17 @@ Solutions &  \textit{Open Science }&    \textit{Open Policy Analysis } \\
 
 \begin{frame}{Principles for Open Policy Analysis}
 Proposed principles:
+\medskip
 \begin{enumerate}
-\item Computational Reproducibility
-\item Analytic Transparency
-\item Output Transparency 
+\item[{\Large 1}] Computational Reproducibility
+\medskip
+\item[{\Large 2}]  Analytic Transparency
+\medskip
+\item[{\Large 3}]  Output Transparency 
 \end{enumerate}
 \end{frame} 
 
-
-\begin{frame}{Principle 1}
+\begin{frame}{Principle 1: Stop re-inventing the wheel}
 \begin{columns}
 \begin{column}{0.3\textwidth}
 \textbf{Computational Reproducibility}
@@ -728,7 +693,7 @@ Proposed principles:
 \item Literate \\ Programming
 \item Version control
 \item File structure
-\item Label sources
+\item \textbf{Label sources}
 \end{itemize}
 \end{column}
 \begin{column}{0.65\textwidth}  %%<--- here
@@ -739,7 +704,7 @@ Proposed principles:
 \end{columns}
 \end{frame}
 
-\begin{frame}{Principle 2}
+\begin{frame}{Principle 2: Show your work (readable)}
 \begin{columns}
 \begin{column}{0.25\textwidth}
    \textbf{Analytic Transparency}
@@ -757,7 +722,7 @@ Proposed principles:
 \end{columns}
 \end{frame}
 
-\begin{frame}{Principle 3}
+\begin{frame}{Principle 3: Let's all agree on one table/viz}
 \begin{columns}
 \begin{column}{0.3\textwidth}
  \textbf{Output \\ Transparency}
@@ -768,7 +733,7 @@ Proposed principles:
 \end{column}
 \begin{column}{0.7\textwidth}  %%<--- here
     \begin{center}
-    \vspace{-2em}
+    \vspace{-0.8em}
      \includegraphics[width=.6\textwidth]{../Images/o_transp.png}
      \end{center}
 \end{column}
@@ -829,37 +794,9 @@ Examples: Require contracted policy analysis to be fully open. Support training 
 %\end{frame} 
 
 
-\part{Paper 2}
-\title[OPA - Minimum Wage ] % (optional, use only with long paper titles)
-{Open Policy Analysis: A Case Study of the Minimum Wage Policy Estimate}
-
-\subtitle
-{}
-
-\author[] % (optional, use only with lots of authors)
-{Fernando~Hoces de la Guardia}
-% - Give the names in the same order as the appear in the paper.
-% - Use the \inst{?} command only if the authors have different
-%   affiliation.
-
-\institute[] % (optional, but mostly needed)
-{%
-  UC Berkeley:\\
-  Berkeley Initiative for Transparency in the Social Sciences\\
-}
-% - Use the \inst command only if there are several affiliations.
-% - Keep it simple, no one is interested in your street address.
-
-
-
-
-\begin{frame}
-  \titlepage
-\end{frame}
-
-\section{Motivation}
-
-\begin{frame}[noframenumbering]{Motivation: Gap On How to Conduct OPA}
+\section{Application}
+\begin{comment}
+\begin{frame}[noframenumbering]{Application}
 \begin{table}[ht]
 \centering
 \begin{tabular}[t]{|l|c|c|}
@@ -902,18 +839,29 @@ Solutions &  \textit{Open Science}&    \textit{Open Policy Analysis} \\
 \end{table}%
 \end{frame}
  
+\end{comment}
 % \section{Approach}
 %\begin{frame}{Approach}
 %\begin{itemize}
 %item Identify a case study
 %\item Define guidelines
-%\item Demonstrate how to achieve highest standards of Open Policy Analysis (OPA)
+%\item Demonstrate how to achieve highest standards of Open Policy Analysis (OPA)x
 %\item Use sensitivity analysis to explore biggest policy unknowns 
 %\begin{itemize}
 %\item  Surprisingly, academic debate around one specific parameter seems less relevant from policy perspective
 %\end{itemize}
 %\end{itemize}
 %\end{frame} 
+
+
+\begin{frame}[noframenumbering]
+\begin{enumerate}
+\item Why we need Open Policy Analysis (Hoces de la Guardia, Grant \& Miguel, 2018)
+\bigskip
+\item \textbf{Application to policy estimates of the minimum wage. }
+\end{enumerate}
+\end{frame}
+
 
 \section[Case Study]{Description of Case Study}
 
@@ -961,6 +909,19 @@ Congressional Budget Office (2014)
 
 \end{comment}
 
+
+\begin{frame}{Adapting TOP Guidelines to Policy Analysis}
+\vspace{-.1in}
+\begin{figure}[h!]
+\centering
+\hspace*{-3em}
+\includegraphics[scale = 0.3]{../Images/TOP_screens}
+\caption{Screen shot of TOP Guidelines}
+\label{pol_est}
+\end{figure}	
+\end{frame}
+
+\begin{comment}
 \section{Guidelines}
 
 
@@ -1034,6 +995,7 @@ Congressional Budget Office (2014)
      \multicolumn{5}{ P{11.7cm} }{  \raggedleft {\red\small{ From TOP guidelines (Nosek et al 2015) v1.0.1}} \small{\hyperlink{no_gray}{\beamerbutton{}}} }
    \end{tabular}}
 \end{frame}
+\end{comment}
 
 \section{Application}
 
@@ -1045,7 +1007,7 @@ Congressional Budget Office (2014)
 
 {\Huge
 \texttt{\href{https://rpubs.com/fhoces/dd_cbo_mw}{{\blue\underline{DEMO}}}}
-}\small{\hyperlink{no_inet}{\beamerbutton{}}}
+}
 
 
 \end{center}
@@ -1169,16 +1131,29 @@ Congressional Budget Office (2014)
 
 \end{comment}
 
+\begin{comment}
 
 \begin{frame}{Demo Checklist}
 \begin{itemize}
 \item One-click reproducible \& machine independent.
-\item WYSIATI.
-\item Readable. Weather you know {\large\texttt{R}} or not. 
-\item TO DO: diff between two versions.
+\begin{itemize}
+\item Go to {\blue\texttt{\href{http://www.github.com/fhoces/DD_MW}{\underline{github.com/fhoces/DD_MW}}}}. And {\blue\texttt{\href{https://github.com/fhoces/DD_MW/archive/master.zip}{\underline{download}}}}.
+\item Execute \texttt{dd\_cbo\_mw.Rmd}. (Requires  {\blue\texttt{\href{https://cran.r-project.org/}{\underline{R}}}} and {\blue\texttt{\href{https://www.rstudio.com/products/rstudio/download/\#download}{\underline{RStudio}}}}  installed)
+\end{itemize}
+\item Readable. Weather you know {\large\texttt{R}} or not.
+\begin{itemize}
+\item Code chunks and narrative.
+\item Every computation is wrapped in small functions.
+\end{itemize}
+\item Complete record of all modifications
+\begin{itemize}
+\item Diff between two versions. Think tank {\blue\texttt{\href{https://rpubs.com/fhoces/dd_cbo_mw}{\underline{A}}}}  vs Think tank {\blue\texttt{\href{https://rpubs.com/fhoces/dd_alt_mw}{\underline{B}}}} 	
+\end{itemize} 
 \item Sensitivity analysis.
 \end{itemize}
 \end{frame}
+
+\end{comment}
 
 \section{Sensitivity Analysis}
 
@@ -1186,7 +1161,7 @@ Congressional Budget Office (2014)
 \begin{figure}[h!]
 \centering
 \hspace*{-3em}
-\includegraphics[scale = 0.13]{../Images/policy_est}
+\includegraphics[scale = 0.17]{../Images/policy_est}
 \caption{Default settings {\white $ \eta $} }
 \end{figure}	
 \end{frame}
@@ -1195,7 +1170,7 @@ Congressional Budget Office (2014)
 \begin{figure}[h!]
 \centering
 \hspace*{-3em}
-\includegraphics[scale = 0.13]{../Images/policy_est_eta001}
+\includegraphics[scale = 0.17]{../Images/policy_est_eta001}
 \caption{From $\eta^{teens}_{lit} = - 0.1$ to  $\eta^{teens}_{lit} = - 0.01(\Delta^{-}90\%)$}
 \end{figure}	
 \end{frame}
@@ -1204,7 +1179,7 @@ Congressional Budget Office (2014)
 \begin{figure}[h!]
 \centering
 \hspace*{-3em}
-\includegraphics[scale = 0.13]{../Images/policy_est}
+\includegraphics[scale = 0.17]{../Images/policy_est}
 \caption{Default settings {\white $ \eta $} }
 \end{figure}	
 \end{frame}
@@ -1213,7 +1188,7 @@ Congressional Budget Office (2014)
 \begin{figure}[h!]
 \centering
 \hspace*{-3em}
-\includegraphics[scale = 0.13]{../Images/policy_est_bl_204040}
+\includegraphics[scale = 0.17]{../Images/policy_est_bl_204040}
 \caption{From $(1PL, 6PL) \sim (1\%, 29\%, 70\%)$ to  $(20\%, 40\%, 40\%)$}
 \end{figure}	
 \end{frame}
@@ -1263,7 +1238,7 @@ Source & Input                & $10\% \Delta^{+}$ 	& $10\% \Delta^{-}$ & $10\% \
 \end{itemize} 
 \end{frame}
 
-\begin{frame}{Discussion}
+\begin{frame}{What lies ahead}
 \onslide<1>{
 Let's assume this becomes the new status quo. 
 \begin{itemize}
@@ -1296,24 +1271,25 @@ Let's assume this becomes the new status quo.
 \end{itemize}
 \end{frame}
 
-\begin{frame}{BITSS/CEGA's next step to push OPA forward}
-\begin{itemize}
-\item Partner with key policy analysts to build more case studies (CBO, Tax policy/Inequality, Chilean pension reform)
-\item Guidelines and trainings
-\item Developing a new model for collaboration among policy analysts, policy-makers and researchers, with the aim of fostering more direct impact on high-level government decisions
-\end{itemize}
-\end{frame}
-
 \begin{frame}{Your next steps to push OPA forward}
 \begin{itemize}
 \item Collaborate with BITSS to open up your PA. 
 \item Fund OPA: directly or conditionally.
 \item Train students/analysts in OPA.
 \item Present/showcase your OPA. Pioneers: GiveWell, AEI.  
-\item Nominate a PA to be open. 
+\item Nominate a PA to be open {\blue\texttt{\href{https://goo.gl/forms/ImKnRb5pJWt5apcJ2}{\underline{here}}}}. 
 \end{itemize}
 \end{frame}
 
+\begin{frame}{An Aspiration}
+   \begin{tikzpicture}[remember picture,overlay]
+       \node[at=(current page.center), xshift =0em, yshift = -1em] {
+         \includegraphics[width=.68\paperwidth]{../Images/aspiration2.PNG}
+       };
+   \end{tikzpicture}
+\end{frame}
+
+\begin{comment}
 \begin{frame}{An Aspiration}
    \begin{tikzpicture}[remember picture,overlay]
        \node[at=(current page.center), xshift =0em, yshift = -1.4em] {
@@ -1321,8 +1297,7 @@ Let's assume this becomes the new status quo.
        };
    \end{tikzpicture}
 \end{frame}
-
-
+\end{comment}
 
 \begin{frame}[noframenumbering]
 \begin{center}
@@ -1342,6 +1317,7 @@ Slides at \\
 \end{center}
 \end{frame}
 
+\begin{comment}
 \appendix
 
 \begin{frame}[noframenumbering]
@@ -1350,305 +1326,10 @@ Back-up slides
 \end{center}
 \end{frame}
 
-
-
-
-
-
-
-
 \backupbegin
 
-
-
-\begin{frame}[label=before]{Easier Methodological Appraisal. Example: dis-employment effects \textbf{Before}}
-
-
-Steps taken to verify the analysis \&  employment variation $(\widehat{\Delta E}\times 1000)$ at each line\footnotemark 
-
-\footnotetext[1]{Assuming target population $\approx 22$ million, $\overline{\Delta w_{w\leq MW^{'}}} \approx 14\%$, and non-compliance $\approx 15\%$ }
- 
-
-\begin{enumerate}
-\pause
-\item Find an elasticity: -0.1 (page 25): {\red $\widehat{\Delta E} \approx 300$ }
-\pause
-\item What about adults? $\eta^{adults}=\frac{1}{3}\eta^{teens}$ (page 28):  {\red $\widehat{\Delta E} \approx 100$  } 
-\pause
-\item What about the adjustment? $\widetilde{ \eta^{g}_{w\leq MW} } =  \frac{\eta^{g}_{lit}}{p^{g}_{w\leq MW}} \times \frac{\%\Delta MW}{\overline{\%\Delta w^{g}}}$ (page 26-28 + 2 papers):   {\red $\widehat{\Delta E} \approx 1,100$  } 
-\pause
-\item The adjustment factors $\frac{1}{p^{g}_{w\leq MW}} \times \frac{\%\Delta MW}{\overline{\%\Delta w^{g}}} = F^{g}_{adj}$ are not computed from the data (3.2 teens, 19.5 adults). Instead: $F^{teen}_{adj} = F^{adult}_{adj}= 4.5$ (page 28) ${\red\widehat{\Delta E} \approx 500}$   
-\end{enumerate}
-\textit{Steps 2-4 took several days of work! }
-\small{\hyperlink{map_cbo}{\beamerbutton{}}}
-\end{frame}
-
-\begin{frame}[label=equations]{{\small\hyperlink{map_cbo}{\beamerbutton{}}}Equations from Model in DD}
-\subsection{Employment}
-
-\begin{flalign}\label{N_final}
-\widehat{\Delta E} &= N \times \eta \times \% \Delta w  + \text{Other factors} &&
-\end{flalign}
-
-\begin{flalign}
-\widehat{ N^{s}_{final} } &= \hat{ g_{N}(t'|t) } \times  \hat{ N^{s}_{t} }  \times P(\hat{w'} \leq MW^{new}|s)  \times (1 - \hat{ \alpha^{s}_{1} } - \hat{ \alpha^{s}_{2} })  \hspace{2em} s = \{teens, \, adults \} &&
-\end{flalign}
-
-The elasticity for adults from the literature is define as the one for teenagers with an extrapolation factor. 
-  
-\begin{flalign}
-\eta^{adults}_{lit} &= \eta^{teens}_{lit} \times F_{extrapolation}&& 
-\end{flalign}
-\end{frame}
-
-\begin{frame}{{\small\hyperlink{map_cbo}{\beamerbutton{}}}Adjustments to the elasticity of labor demand}
-Following Neumark and Wascher (2008),  Brown (1999). First:
-
-\begin{flalign}
-\eta^{s}_{lit} &= p^{s}_{w\leq MW} \eta^{s}_{w\leq MW} + (1 - p^{s}_{w\leq MW})\eta^{s}_{w > MW}  \hspace{2em} s = \{teens, \, adults \} &&\nonumber 
-\end{flalign}
-
-Second, assume $\eta^{s}_{w\leq MW} = 0$:
-
-\begin{flalign}
-\eta^{s}_{w\leq MW} &= \frac{\eta^{s}_{lit}}{p^{s}_{w\leq MW}}  \hspace{2em} s = \{teens, \, adults \}&& \nonumber
-\end{flalign}
-
-And third, adjust for the effective average wage variation for each group ($\overline{\%\Delta w^{s}}$):
-
-\begin{flalign}\label{eta_final}
-\widetilde{ \eta^{s}_{w\leq MW} } &=  \frac{\eta^{s}_{lit}}{p^{s}_{w\leq MW}} \times \frac{\%\Delta MW}{\overline{\%\Delta w^{s}}} = \eta^{s}_{lit} \times F^{s}_{adjs}  \hspace{2em} s = \{teens, \, adults \}&&
-\end{flalign}
-
-\end{frame}
-
-
-\begin{frame}{{\small\hyperlink{map_cbo}{\beamerbutton{}}}Final Effect on Employment}
-
-\begin{flalign}
- \widehat{ \Delta E } &= \sum_{g\in\{A,T\}} \left( \widehat{ N^{final}_{g} } \times \widetilde{ \eta^{g}_{w\leq MW} }\times \overline{\%\Delta w^{g}}  \right) - \widehat{OF}&&
-\end{flalign}
-\end{frame}
-
-\begin{frame}{{\small\hyperlink{map_cbo}{\beamerbutton{}}}Effect on Wages}
-\subsection{Wages}  
-
-\begin{flalign}\label{no_comp}
-w^{''} &=
-\begin{cases}
-w' \quad if \quad  w \in U[0,1]<\alpha_1 \\
-w^{new} \quad \quad o/w
-\end{cases} &&
-\end{flalign}
-
-\begin{flalign}
-w^{new} &=
-\begin{cases}
-w'/2 \quad if \quad  w \in U[0,1]<\alpha_{aux} \\
-\widetilde{w^{new}} \quad \quad o/w
-\end{cases} &&
-\end{flalign}
-
-Ripple Effects
-
-\begin{flalign}\label{ripple_wages}
-\widetilde{w^{new}}  &=
-\begin{cases}
-MW' \quad if \quad  w' < R_{lb} \\
-MW' + R^{I}(w' - R^{s}_{lb} )\quad if \quad  w' \in [R_{lb}, MW') \\
-w' + R^{I}(R^{s}_{ub} - w' )\quad if \quad  w' \in [MW', R_{ub}) \\
-w' \quad \quad o/w
-\end{cases} &&
-\end{flalign}
-\end{frame}
-
-\begin{frame}{{\small\hyperlink{map_cbo}{\beamerbutton{}}}Computing Income}
-\vspace{-0.5em}
-\subsection{Income}
-
-\begin{flalign}
- y'_{i,h} &= \sum_{i\in N_{h}} \left( g_{nw}(t'|t) nw_{i} + w'_{i}  \right)/N_{h} &&\nonumber \\
- y''_{i,h} &= \sum_{i\in N_{h}} \left( g_{nw}(t'|t) nw_{i} + w''_{i}  \right)/N_{h} &&
-\end{flalign}
-
-\textbf{Final Policy Estimates}
-\vspace{-0.5em}
-\begin{flalign}
- WG_{i} &=  \left(y''_{i}  - y'_{i} \right) \mathbf{I}\left(y''_{i}  > y'_{i} \right)  &&\\
- WL_{i} &=  \left(y'_{i}  - y"'_{i} \right) \mathbf{I}\left(y''_{i}  < y'_{i} \right)  && \\
- BL &= \sum_{i} WG_{i} - F_{sub} \sum_{i} WL_{i};\quad 
- BL_i = BL \times dBL &&\\
- \overline{WG_{Q}} &= \frac{\sum_{i \in Q} WG_{i}}{N_{pop}/5} \quad
- \overline{WL_{Q}} = \frac{\sum_{i \in Q} WL_{i}}{N_{pop}/5}  && \nonumber\\ 
- \overline{BL_{Q}} &= \frac{\sum_{i \in Q} BL_{i}}{N_{pop}/5} &&\label{last.eq}  
-\end{flalign}
-
-\end{frame}
-
-
-\begin{frame}[plain, label=no_inet]{Snapshots of DD}
-\vspace{-2em}
-\begin{figure}[h!]
-\centering
-\hspace{-5em} \includegraphics[scale = 0.28]{../Images/Screen_Shot1}
-\hyperlink{demo}{\beamerbutton{}}
-\end{figure}	
-
-\end{frame}
-
-\begin{frame}[plain]{Snapshots of DD\hyperlink{demo}{\beamerbutton{}}}
-\vspace{-2em}
-\begin{figure}[h!]
-\centering
-\hspace{-5em} \includegraphics[scale = 0.28]{../Images/Screen_Shot2}
-\hyperlink{demo}{\beamerbutton{}}
-\end{figure}	
-\end{frame}
-
-\begin{frame}[plain]{Snapshots of DD\hyperlink{demo}{\beamerbutton{}}}
-\vspace{-2em}
-\begin{figure}[h!]
-\centering
-\hspace{-5em} \includegraphics[scale = 0.28]{../Images/Screen_Shot3}
-\hyperlink{demo}{\beamerbutton{}}
-\end{figure}	
-\end{frame}
-
-\begin{frame}[plain]{Snapshots of DD\hyperlink{demo}{\beamerbutton{}}}
-\vspace{-2em}
-\begin{figure}[h!]
-\centering
-\hspace{-5em} \includegraphics[scale = 0.28]{../Images/Screen_Shot4}
-\hyperlink{demo}{\beamerbutton{}}
-\end{figure}	
-\end{frame}
-
-\begin{frame}[plain]{Snapshots of DD\hyperlink{demo}{\beamerbutton{}}}
-\vspace{-2em}
-\begin{figure}[h!]
-\centering
-\hspace{-5em} \includegraphics[scale = 0.28]{../Images/Screen_Shot5}
-\hyperlink{demo}{\beamerbutton{}}
-\end{figure}	
-\end{frame}
-
-\begin{frame}[plain]{Snapshots of DD}
-\vspace{-2em}
-\begin{figure}[h!]
-\centering
-\hspace{-5em} \includegraphics[scale = 0.28]{../Images/Screen_Shot6}
-\hyperlink{demo}{\beamerbutton{}}
-\end{figure}	
-\end{frame}
-
-
-
-\begin{frame}[label=full_model]{Clear connection between sources and inputs}
-\centering
-\resizebox{25em}{11em}{%
-\begin{tabular}{P{1em}P{16em}|P{25em}}
-\hline
-\multicolumn{2}{c|}{Source} & \multicolumn{1}{c}{Input} \\ \hline
-\multicolumn{2}{l|}{\textit{Data}} &  \\
- & CPS ORG 2013 \linebreak (CEPR version) & Number of salary workers in 2013 $(\widehat{ N^{g}_{final} } \quad g\in\{teen, adult\} )$; Fraction of workers below the new minimum wage $(P_{\hat{w} \leq MW^{1}|g})$; Average wage variation for those below the new min wage $(\overline{\%\Delta w^{g}})$; Non-compliance rate $(\alpha_{1}^{g})$\\
-  &  &  \\ 
- & CPS ASEC 2012 \linebreak (CEPR version) & Wages and Non-Wage Income distribution $(dF_{w}, dF_{nw})$; Household size ($N_{h}$); Hours/weeks worked $(\hat{w} , \hat{h})$\\
- & State level Min. Wage (DOL) & Trends in state min. wage $(MW^{s}_{t})$ \\
- & 10-year economic forecast (CBO) & Predicted worker growth by 2016 (in 2013) $(\hat{g_{N}})$; Wage growth in by 2016 $(\hat{g_{w}})$; Non-wage growth by 2016 $(\hat{g_{nw}})$ \\
- &  &  \\ \hline
-\multicolumn{2}{l|}{\textit{Research}} &  \\
-  & Elasticity of labor demand for teenagers &  $\eta_{teen}^{lit} = -0.1$ \\
- & Ripple effects & From $R_{lb} = \$8.7$ to $R_{ub} = \$11.5$ with a ``ripple'' intensity of $R_{I} = 50\%$  \\
- &  &  \\ \hline
-\multicolumn{2}{l|}{\textit{Guess Work}} &  \\
- & Extrapolation factor from teenagers to adults  &  $F_{ex} = 1/3$ \\
- & Net benefits &  $\hat{NB} = \$2 billion$  \\
-  & Adjustment to account for effective wage variation and affected population &  $F_{adj} = 4.5$  \\
- & Aggregate consumption effects on employment &  $\hat{OF} = 40,000 \, new \, jobs$\\
- & Distribution of balance loses & $dBL = (1\%, 29\%, 70\%)$  if income $\in [0, 1PL, 6PL, + )$  \\
- & Fract. of wage loses used to pay wage gains &  $F_{subs} = 1$ \\
- & Job killing process: fraction of jobs & Cut wages in half for twice the number of jobs destroyed \\ \hline
-\end{tabular}}
-
-\end{frame}
-
-
-\begin{frame}{Fully specified model}
-\centering
-\resizebox{25em}{9em}{%
-\begin{tabular}{P{19em}|P{9em}}
-\hline
-\multicolumn{1}{c|}{Model} & {\centering Policy estimate \linebreak (per quintile) } \\ \hline
-Predicted household income with and without min wage increase. \linebreak \textbf{Depends on}: $\widehat{ N^{g}_{final} },  P_{\hat{w} \leq MW^{1}|g}, \overline{\%\Delta w^{g}},\alpha_{1}^{g},$ $dF_{w}, dF_{nw}, N_{h}, \hat{w}, \hat{h}, MW^{s}_{t}, \hat{g_{N}}, \hat{g_{w}},\hat{g_{nw}},$ $\eta_{teen}^{lit}, R_{lb}, R_{ub}, R_{I}, F_{ex}, F_{adj}, \hat{OF}$  &  Average gain in per capita income due to net wage increase. \linebreak ($\overline{WG_{q}}$) \\
-\hline
-%\small{\hyperlink{wage_gain}{\beamerbutton{}}}
-
-Predicted household income with and without min wage increase. \linebreak \textbf{Depends on}: $\widehat{ N^{g}_{final} },  P_{\hat{w} \leq MW^{1}|g}, \overline{\%\Delta w^{g}},\alpha_{1}^{g},$ $dF_{w}, dF_{nw}, N_{h}, \hat{w}, \hat{h}, MW^{s}_{t}, \hat{g_{N}}, \hat{g_{w}},\hat{g_{nw}},$ $\eta_{teen}^{lit}, F_{ex}, F_{adj}, \hat{OF}$  &  Average loss in per capita income due to net wage decrease. \linebreak ($\overline{WL_{q}}$) \\
-\hline
-%\small{\hyperlink{wage_loss}{\beamerbutton{}}}
-Distribution of balance loses \linebreak \textbf{Depends on}: $\overline{WG_{q}}(\cdot), \overline{WL_{q}}(\cdot), \hat{NB},$ $F_{subs}, dBL$  &  Average loss in per capita income to balance wage gains. \linebreak ($\overline{BL_{q}}$) \\
-\hline\hline
-{ \raggedright {\small \hyperlink{equations}{Equations}; \hyperlink{map_cbo}{Back} } }
-\end{tabular}}
-
-\end{frame}
-
-\begin{frame}{Comparing the Trade-offs: A Toy Example}
-
-Model for the normative comparison made by a policy maker (welfare function):
-
-\begin{align*}
-W(\rho) &= \sum_{i \in N} \left( \omega_{wg}  wg_{i} + \omega_{wl} wl_{i} + \omega_{bl} bl_{i} \right) \omega^{d}_{i}(Q_{i}, \rho) \\
-\text{with:}& \nonumber \\
-\omega^{d}_{i}(Q_{i}, \rho) &= \frac{(1 - \rho(Q_{i} - Q_{median}) ) }{\sum_{i} \omega^{d}_{i}(Q_{i}) } Q_{max} \quad \text{for }  \rho \in \left(-\frac{1}{2}, \frac{1}{2} \right) \nonumber
-\end{align*}
-$\rho>0$ represents positive valuation of progressive redistribution. $\rho<0$ represents positive valuation of regressive redistribution. 
-\end{frame}
-
-
-\begin{frame}{ Redistribiutional Preferences  \linebreak \vspace*{-1em} Toy Example ({ $\omega_{WG} = \omega_{WL} = \omega_{BL} = 1$}) }
-
-\vspace{-.2em}
-\begin{figure}[h!]
-\centering
-\includegraphics[scale = 0.35]{../Images/sample_pref}
-\label{toy_ex}
-\end{figure}	
-\end{frame}
-
-
-\begin{frame}{Motivation 2: An Academic Concern in 2013}
-\begin{exampleblock}{}
-  {\large ``I worry that someday sooner or later the existing social contract to take CBO scores at face value will break down. Conventional Certitudes that lack foundation cannot last indefinitely.''
-}
-  \vskip3mm
-  \raggedleft{\small--- Charles Manski} \footnotesize{ \linebreak  Public Policy in an Uncertain World, 2013} 
-  	  
-\end{exampleblock}
-\end{frame}
-
-\begin{frame}{Motivation 2: A Reality In 2017}
-   \begin{tikzpicture}[remember picture,overlay]
-       \node[at=(current page.center), xshift = 2em, yshift = -1.4em] {
-         \includegraphics[width=.87\paperwidth]{../Images/CBO_under_attack.PNG}
-       };
-   \end{tikzpicture}
-\end{frame}
-
-  
-\begin{frame}{Challenges And Suggestions}
-\textbf{Challenges:}
-\begin{itemize}
-\item Policymakers may not want analyses to be open.
-\item Analysts may wish to keep policy analyses ``closed''. 
-\item For policy analysis contracted out to third parties: Opening methods will prevent them form reselling extensions.
-\item  Initially reproducibility represents an additional layer of work.
-\item Limits to sharing sensitivity of information, requires resources for adequate de-identification if open data is expected
-\end{itemize}
-\end{frame} 
-
 \backupend
-
+\end{comment}
 
 
 
