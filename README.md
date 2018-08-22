@@ -1,2 +1,2 @@
-# CBO2018
-Contain slides for presentation at CBO about Open Policy Analysis
+# Slides
+Contain slides for presentation at GiveWell, EDI, RT2, GSPP and APPAM.
