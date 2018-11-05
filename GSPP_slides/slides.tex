@@ -319,7 +319,7 @@ Policy Analysis is a fundamental link.
 %\item ``Most published research is false'' Ioannidis (2005). 
 \item Large magnitude of publication bias (Franco et al 2014).  
 \item Evidence of extensive p-hacking across social science disciplines (Gerber et al 2008, Brodeur et al 2016).
-\item Replication rates are low (Collaboration et al, 2015 , Camerer et al, 2016). 
+\item Replication rates are low (Collaboration et al, 2015 , Camerer et al, 2016, 2018). 
 \item Computational reproducibility is also low (Stodden et al 2016, Chang and Li 2015, Gertler et al 2018).
 \end{itemize}
 
@@ -1338,7 +1338,7 @@ Pre-prints:\\
 {\blue \href{https://osf.io/preprints/bitss/ba7tr/}{OPA Case Study}  } \\
 \medskip
 Slides at \\
-{\blue \href{https://tinyurl.com/yacz2z78}{https://tinyurl.com/yacz2z78}  }
+{\blue \href{https://tinyurl.com/ycfg33vr}{tinyurl.com/yacz2z78}  }
 \bigskip \\
 \href{mailto:fhoces@berkeley.edu}{fhoces@berkeley.edu}
 }
@@ -1400,11 +1400,12 @@ And third, adjust for the effective average wage variation for each group ($\ove
 
 \begin{frame}{{\small\hyperlink{map_cbo}{\beamerbutton{}}}Effect on Wages}
 \subsection{Wages}  
+$w':$ wages in 2016 under the status quo.  
 
 \begin{flalign}\label{no_comp}
 w^{''} &=
 \begin{cases}
-w' \quad if \quad  w \in U[0,1]<\alpha_1 \\
+w' \quad if \quad  U[0,1]<\alpha_1 \\
 w^{new} \quad \quad o/w
 \end{cases} &&
 \end{flalign}
@@ -1412,7 +1413,7 @@ w^{new} \quad \quad o/w
 \begin{flalign}
 w^{new} &=
 \begin{cases}
-w'/2 \quad if \quad  w \in U[0,1]<\alpha_{aux} \\
+w'/2 \quad if \quad  w \in U[0,1]<\frac{2\Delta E}{N_{w<MW'}} \\
 \widetilde{w^{new}} \quad \quad o/w
 \end{cases} &&
 \end{flalign}
